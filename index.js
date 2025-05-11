@@ -13,8 +13,52 @@ app.use(cors());
 
 // Route de test
 app.get('/', (req, res) => {
-  res.send('API is running 🚀, on est trop bon , on y va zoom YAYAYAYAYAYAYA');
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Bienvenue à l'EPT</title>
+      <style>
+        body {
+          background: linear-gradient(to right, #1e3c72, #2a5298);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          text-align: center;
+        }
+        .container {
+          max-width: 800px;
+          padding: 20px;
+          background: rgba(0, 0, 0, 0.4);
+          border-radius: 15px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        h1 {
+          font-size: 2.5em;
+          margin-bottom: 0.5em;
+        }
+        p {
+          font-size: 1.3em;
+          line-height: 1.6;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Bienvenue sur le site de l’EPT !</h1>
+        <p>Je vous souhaite la plus chaleureuse bienvenue sur le site web de l’École Polytechnique de Thiès (EPT), la première école d’ingénieurs de conception du Sénégal.</p>
+      </div>
+    </body>
+    </html>
+  `);
 });
+
 
 // GET /users : Récupérer tous les utilisateurs
 app.get('/users', async (req, res) => {
