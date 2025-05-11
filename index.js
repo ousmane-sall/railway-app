@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>Bienvenue sur le site de l’EPT !</h1>
+        <h1>Bienvenue sur le site de SALL !</h1>
         <p>Je vous souhaite la plus chaleureuse bienvenue sur le site personnel de Ousmane Sall, élève ingénieur à l’École Polytechnique de Thiès (EPT), la première école de formation d’ingénieurs de conception au Sénégal.</p>
       </div>
     </body>
