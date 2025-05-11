@@ -13,7 +13,7 @@ app.use(cors());
 
 // Route de test
 app.get('/', (req, res) => {
-  res.send('API is running 🚀, on est trop bon , on y va zoom');
+  res.send('API is running 🚀, on est trop bon , on y va zoom YAYAYAYAYAYAYA');
 });
 
 // GET /users : Récupérer tous les utilisateurs
